@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './header';
 import Meme from './meme';
-import Image from './image';
+// import Image from './image';
 
 
 
@@ -12,7 +12,7 @@ function App() {
     <div>
      <Header/>
      <Meme/>
-     <Image/>
+     
     </div>
   );
 }
