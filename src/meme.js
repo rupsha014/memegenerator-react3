@@ -6,7 +6,7 @@ import memedata from './memedata';
 
 function Meme() {
     let url
-    function getMemeImage() {memeArray[randomNumber].url
+    function getMemeImage() {
         const memeArray = memedata.data.memes
         const randomNumber = Math.floor(Math.random() * memeArray.length)
          url = memeArray[randomNumber].url                                                                                                                                 
@@ -30,12 +30,15 @@ function Meme() {
 
                 <button
                     className="bg-gradient-to-r from-purple-900 to-purple-600 p-6 text-white font-semibold mr-11 ml-11 rounded-lg text-lg shadow-lg"
-                    onClick={getMemeImage}
+                    onClick={getMemeImage()}
                 >
                     Get a new meme image 🖼
                 </button>
-                 <Image url={url}/> 
-                <p>{url}</p>
+                <div className='flex justify-center items-center mt-5'>
+                <img  src={url}/>
+                </div>
+                 
+            
             </form>
         </div>
     )

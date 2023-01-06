@@ -10,9 +10,8 @@ import Meme from './meme';
 function App() {
   return (
     <div>
-     <Header/>
-     <Meme/>
-     
+      <Header />
+      <Meme />
     </div>
   );
 }
